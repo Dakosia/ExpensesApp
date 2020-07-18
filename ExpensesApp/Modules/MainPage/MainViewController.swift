@@ -38,7 +38,7 @@ class MainViewController: UIViewController {
         outcomeButton.layer.cornerRadius = Constants.buttonCornerRadius
         
         if let amount = UserDefaults.standard.value(forKey: "UserTotalAmount") as? Double {
-            self.amountLabel.text = amount.description
+            self.amountLabel.text = amount.description + ""
         }
     }
     
